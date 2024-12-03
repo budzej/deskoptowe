@@ -1,0 +1,39 @@
+﻿<Window x:Name="wRegexy" x:Class="regexy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:regexy"
+        mc:Ignorable="d"
+        Title="Regex" Height="950" Width="600" FontSize="16">
+    <Grid Margin="0,0,-10,-6">
+        <TextBox x:Name="txtBoxKodPocztowy" TextWrapping="Wrap" Text="" Margin="10,50,416,851"/>
+        <Label Content="Kod pocztowy" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.266,-0.172" Height="45" Width="173"/>
+        <Button x:Name="btnKodPocztowy" Content="Sprawdź kod" HorizontalAlignment="Left" 
+                Margin="214,49,0,0" VerticalAlignment="Top" Width="170" Height="28" 
+                Click="btnKodPocztowy_Click" RenderTransformOrigin="0.669,1.009"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.369,0.065" Width="120"/>
+        <Button x:Name="btnEmail" Content="Sprawdź Email" HorizontalAlignment="Left" Margin="214,178,0,0" VerticalAlignment="Top" Height="30" Width="170" Click="btnEmail_Click"/>
+        <TextBox x:Name="txtBoxEmail" HorizontalAlignment="Left" Margin="10,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173" Height="39" RenderTransformOrigin="0.491,0.491"/>
+        <Label Content="Numery telefonów" HorizontalAlignment="Left" Margin="10,236,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxNumeryTel" TextWrapping="Wrap" Margin="10,270,416,639"/>
+        <Button x:Name="btnNumeryTel" Content="Poszukaj numerów" HorizontalAlignment="Left" Margin="214,267,0,0" VerticalAlignment="Top" Width="170" Height="34" Click="btnNumeryTel_Click"/>
+
+        <Label Content="Data (YYYY-MM-DD)" HorizontalAlignment="Left" Height="32" Margin="10,347,0,0" VerticalAlignment="Top"
+               Width="201"></Label>
+        <TextBox x:Name="txtBoxDate" Text="" HorizontalAlignment="Left" Height="32" Margin="10,379,0,0" TextWrapping="Wrap"
+                 VerticalAlignment="Top" Width="201"></TextBox>
+        <Button x:Name="BtnDate" Content="Sformatuj date" HorizontalAlignment="Center" Margin="0,379,0,0" VerticalAlignment="Top" Height="31" Width="158" Click="BtnDate_Click"/>
+        <Label Content="Wpisz jakiś tekst" HorizontalAlignment="Left" Margin="18,460,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.282,-0.159"/>
+        <TextBox x:Name="txtBoxZdanie" HorizontalAlignment="Left" Margin="10,496,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Height="36"/>
+        <Button x:Name="btnUsuwanie" Content="Usuń zbędne spacje" HorizontalAlignment="Center" Margin="0,495,0,0" VerticalAlignment="Top" Height="37" Width="158" Click="btnUsuwanie_Click"/>
+        <Label Content="Wpisz zdanie" HorizontalAlignment="Left" Margin="10,556,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxZdanie2" HorizontalAlignment="Left" Margin="10,587,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Height="42"/>
+        <Button x:Name="btnPodmien" Content="Podmień zdanie" HorizontalAlignment="Center" Margin="0,590,0,0" VerticalAlignment="Top" Height="36" Width="158" Click="btnPodmien_Click"/>
+        <Label Content="Wpisz zdanie" HorizontalAlignment="Left" Margin="18,655,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxZdanie3" HorizontalAlignment="Left" Margin="6,686,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="50"/>
+        <Button x:Name="btnWymien" Content="Wymień" HorizontalAlignment="Center" Margin="0,693,0,0" VerticalAlignment="Top" Height="36" Width="158" Click="btnWymien_Click"/>
+
+
+    </Grid>
+</Window>
