@@ -1,0 +1,16 @@
+﻿<Window x:Class="ParallelFileProcessing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wielowatkowosc" Height="350" Width="525">
+    <Grid>
+        <Button Name="btnSelectSourceFolder" Content="Wybierz Folder Źródłowy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="40" Click="btnSelectSourceFolder_Click" Margin="10,10,0,0"/>
+
+        <Button Name="btnSelectTargetFolder" Content="Wybierz Folder Docelowy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="40" Click="btnSelectTargetFolder_Click" Margin="170,10,0,0"/>
+
+        <Button Name="btnProcessFiles" Content="Przetwórz Pliki (Wielkie Litery)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="40" Click="btnProcessFiles_Click" Margin="330,10,0,0"/>
+
+        <Button Name="btnProcessFilesLower" Content="Przetwórz Pliki (Małe Litery)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="40" Click="btnProcessFilesLower_Click" Margin="330,60,0,0"/>
+
+        <TextBox Name="txtOutput" HorizontalAlignment="Left" VerticalAlignment="Top" Width="480" Height="200" Margin="10,110,10,10" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+    </Grid>
+</Window>

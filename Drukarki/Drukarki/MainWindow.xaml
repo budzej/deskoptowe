@@ -1,0 +1,21 @@
+﻿<Window x:Class="Drukarki.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Drukarki"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="408" Width="421">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="5">
+            <TextBox Name="txtBox" Width="200" Margin="10"/>
+            <Button Name="btnDrukuj" Width="200" Content="Drukuj TXT" Margin="10" Click="btnDrukuj_Click"/>
+            <Separator/>
+            <RichTextBox Name="rtfTextBox" Width="200" Margin="10" Height="230"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+            <Button x:Name="btnLoadRtf" Content="Wczytaj RTF" Width="100" Margin="5" Click="btnLoadRtf_Click"/>
+            <Button x:Name="btnDrukujRtf" Content="Drukuj RTF" Width="100" Margin="5" Click="btnDrukujRtf_Click"/>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
